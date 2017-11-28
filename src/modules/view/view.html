@@ -3,12 +3,14 @@
 
 <template>
   <div class="container">
+      <div class="panel-group">
+        <div class="panel panel-default">
       <div class="mb-0 mt-4"> Dashbord</div>
    <!--div class="panel-group"-->  
 
      <div class="row">
 
-        <div class="col-lg-6">
+        <div class="col-lg-9">
             <h4> Resultat </h4> 
                 <form>
                     <label class="checkbox-inline">
@@ -19,38 +21,52 @@
                     </label>               
                </form>                
                     <!-- <legend>Line Graph </legend> -->
-               <canvas id="line-chart" chart="type: line;  should-update: true; data.bind: simpleLineData" style="width:100%;  display:block; "></canvas>   
+               <canvas id="line-chart" chart="type: line;  should-update: true; data.bind: simpleLineData ;native-options.bind: myOption ;"></canvas>   
   </div> <!--col chart-->   
     
-  <div class="col-lg-6">
-          <h4>Översikt</h4> 
+  <div class="col-lg-3">
+          <h4>Nånting</h4> 
     </div>
  </div> <!--row -->
               
     <div class="row">
-        <div class="col-lg-6 well">
-            <!--div class="panel panel-default">
-                <div class="panel-heading"-->
-                    <i class="fa fa-bar-chart-o fa-fw"></i> Nånting
-                    <div class="pull-right">
-                        Part3
-                  </div>
-              <!--/div>
-           </div-->
-         </div>   
-        <div class="col-lg-6 well">
-            <!--div class="panel panel-default">
-                <div class="panel-heading"-->
-                    <i class="fa fa-bar-chart-o fa-fw"></i> Att göra
-                    <div class="pull-right">
-                        Part 4
+        <div class="col-lg-6">
+            <div class="panel panel-default">
+                <div class="panel-heading"> Översikt</div>
+                   
+                    <div class="row">
+                      <div class="col-sm-6 text-center"> 
+                         <a href="" target="_blank"> Förfallna kundfakturor</a>
+                         <p><h3>8</h3></p>
+                         </div>
+                      <div class="col-sm-6 text-center">
+                          <a href="" target="_blank"> Nya Bankhändelser att bokföra</a>
+                          <p><h3>11</h3></p>
+                          </div>
                     </div>
-                <!--/div>             
-            </div-->
-         </div>
-    </div> <!--second row-->   
+                    <div class="row">
+                      <div class="col-sm-6 text-center"> 
+                        <a href="" target="_blank">Förfallna leverantörsfakturor</a>
+                         <p><h3>3</h3></p>
+                        </div>
+                      <div class="col-sm-6 text-center"></div>
+                    </div>
 
-    <!--div> <!--panel group"-->
+            </div>        
+         </div> <!--col lg6-->  
+
+
+
+        <div class="col-lg-6 ">
+            <div class="panel panel-default">
+                <div class="panel-heading">                  
+                    <h3>Att göra </h3>                   
+                </div>             
+            </div>
+         </div>
+      </div> <!--second row-->   
+     </div>
+   </div> <!--panel group"-->
   </div> <!-- container"-->
 </template>
 
