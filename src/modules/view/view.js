@@ -1,6 +1,6 @@
 import { Router } from 'aurelia-router';
 import { inject } from 'aurelia-framework';
-
+import './view.scss';
 @inject(Router)
 export class View {
   constructor(router) {
@@ -12,32 +12,69 @@ export class View {
   }
 
   setOption() {
-    this.myOptions = {
-  //     showLines: false,
-  //     legend:{
-  //       position:'buttom'
-  //     }
-   options: {
-    showLines: false,
-    elements: {
-      line: {
-          tension: 10 // disables bezier curves
+    this.options = {
+
+      tooltips: {
+        mode: 'index',
+        axis: 'y'
+      },
+      legend: {
+        display: true,
+        labels: {
+          
+         // fontColor: 'red'
         }
-    }
-  }
+      },
+      scales: {
+
+        yAxes: [{
+          gridLines: {//display:false,
+            //zeroLineWidth: 4,
+            drawBorder: false},
+
+          ticks: {
+           
+              //beginAtZero:false
+           
+          }
+        }],
+        xAxes: [{
+          gridLines: {
+            display:false,
+            drawBorder: false},
+          ticks: {
+           
+            fontSize:8,
+            //fontColor:'red',
+            //scaleLineColor: 'transparent',
+            //padding:0     
+            //minRotation: 90
+          }
+        }]
+
+       // scaleLineColor: 'transparent'
+      },
+
+      elements: {
+        arc: { borderColor: 'red'},
+        line: {            }
+
+      }
 
     };
   }
+  // another way of useing options as direct property in class object like below
+  //  chartOptions = {
+  //       legend: { display: false }
+  //   };
   resetLineData() {
     this.simpleLineData = {
 
       labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
-
+      
       datasets: [{
-         //showLine: false,
-
+        
         label: 'Innevarande räkenskapsår',
-
         backgroundColor: '#1c4b96',
         borderColor: '#1c4b96',
         fill: false,
@@ -58,10 +95,11 @@ export class View {
         data: [500, 1000, 500, 1000, 2000, 13000, 14000, 14500, 10000, 1500, 1000, 500]
       }]
 
+
     };
   } //reset fun
-}
 
+}
       // // Boolean - If we want to override with a hard coded y scale
 
     // addEntry() {

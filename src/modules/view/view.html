@@ -5,54 +5,73 @@
   <div class="container">
       <div class="panel-group">
         <div class="panel panel-default">
-      <div class="mb-0 mt-4"> Dashbord</div>
-   <!--div class="panel-group"-->  
+      <div class="panel-heading"> Dashbord</div>
+   
 
      <div class="row">
 
-        <div class="col-lg-9">
-            <h4> Resultat </h4> 
-                <form>
+        <div class="col-lg-6">
+            <div class="panel panel-default">
+             <div class="panel-heading">Resultat</div>
+                <!--form>
                     <label class="checkbox-inline">
                       <input type="checkbox" value="">innevarande
                     </label>
                     <label class="checkbox-inline">
                       <input type="checkbox" value="">föregående
                     </label>               
-               </form>                
+               </form-->                
                     <!-- <legend>Line Graph </legend> -->
-               <canvas id="line-chart" chart="type: line;  should-update: true; data.bind: simpleLineData ;native-options.bind: myOption ;"></canvas>   
-  </div> <!--col chart-->   
+               <canvas id="line-chart" chart="type: line;  should-update: true; data.bind: simpleLineData ;  native-options.bind:options;" ></canvas>   
+           </div>
+        </div> <!--col chart-->   
     
-  <div class="col-lg-3">
-          <h4>Nånting</h4> 
+  <div class="col-lg-6">
+      <div class="panel panel-default">
+          <div class="panel-heading">    
+           Nånting 
+        </div>   
+      </div>     
     </div>
  </div> <!--row -->
               
     <div class="row">
+        
         <div class="col-lg-6">
+            
             <div class="panel panel-default">
                 <div class="panel-heading"> Översikt</div>
                    
-                    <div class="row">
-                      <div class="col-sm-6 text-center"> 
-                         <a href="" target="_blank"> Förfallna kundfakturor</a>
-                         <p><h3>8</h3></p>
-                         </div>
+                    <div class="row vdivid">
                       <div class="col-sm-6 text-center">
+                        
+                         <p><a href="" target="_blank"> Förfallna kundfakturor</a></p>
+                         <p ><h3 class = "h">8</h3></p>
+                         
+                                          
+                         </div> <!--col6-->
+                         
+                          <div class="col-sm-6 text-center">
+                         
                           <a href="" target="_blank"> Nya Bankhändelser att bokföra</a>
                           <p><h3>11</h3></p>
+                          
+                          
                           </div>
                     </div>
-                    <div class="row">
+                    <hr>
+                    <div class="row vdivid">
                       <div class="col-sm-6 text-center"> 
-                        <a href="" target="_blank">Förfallna leverantörsfakturor</a>
+                         <p><a href="" target="_blank">Förfallna leverantörsfakturor</a></p>
                          <p><h3>3</h3></p>
                         </div>
-                      <div class="col-sm-6 text-center"></div>
+                      <div class="col-sm-6 text-center">
+                        
+                      </div>
                     </div>
-
-            </div>        
+               
+            </div>
+                  
          </div> <!--col lg6-->  
 
 
@@ -60,7 +79,7 @@
         <div class="col-lg-6 ">
             <div class="panel panel-default">
                 <div class="panel-heading">                  
-                    <h3>Att göra </h3>                   
+                   Att göra                   
                 </div>             
             </div>
          </div>
