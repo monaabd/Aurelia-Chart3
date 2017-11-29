@@ -21,33 +21,45 @@ export class View {
       legend: {
         display: true,
         labels: {
-          
+          fontSize: 10
          // fontColor: 'red'
         }
       },
       scales: {
 
         yAxes: [{
+          scaleLabel: {
+           
+          },
           gridLines: {//display:false,
             //zeroLineWidth: 4,
             drawBorder: false},
 
           ticks: {
-           
+
+          //**to add thins next ur tick
+          //   callback: function(value, index, values) {
+          //     return '$' + value;
+          // }
               //beginAtZero:false
-           
+
           }
         }],
         xAxes: [{
+
+          scaleLabel: {
+            paddingRight:5,
+            
+          },
           gridLines: {
-            display:false,
+            display: false,
             drawBorder: false},
           ticks: {
-           
-            fontSize:8,
+            //minRotation: 90,
+            fontSize: 8
             //fontColor:'red',
             //scaleLineColor: 'transparent',
-            //padding:0     
+            //padding:0
             //minRotation: 90
           }
         }]
@@ -71,9 +83,9 @@ export class View {
     this.simpleLineData = {
 
       labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
-      
+
       datasets: [{
-        
+
         label: 'Innevarande räkenskapsår',
         backgroundColor: '#1c4b96',
         borderColor: '#1c4b96',
