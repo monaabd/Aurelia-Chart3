@@ -12,19 +12,16 @@
   
 // }
 
-.vdivide {
-  display: flex;
-  align-items: center;
-   float:none;  
 
-}
+
+
 
 .container{
   background-color:rgb(207, 207, 207);
 }
 
-//bigger row
-.bigger {
+// row
+.wrapper {
   background-color:rgb(207, 207, 207);
 }
 
@@ -33,27 +30,29 @@
 }
 
 .panel-default>.panel-heading {
-  color:rgb(158, 155, 155);
+
   background-color:white;
 }
 .vdivide {
   display: flex;
   //align-items: center;
   justify-content: center;
-   //float:none;  
-  
+   //float:none;
+
 }
 
  a{
   color:black;
   font-size:12px;
 }
-h3 { 
-   
+h3 {
+
   color: rgb(96, 155, 202);}
 
   .details {
   color:rgb(158, 155, 155);
   font-size:12px;
   }
- 
+
+ .notice { color: rgb(233, 15, 15);}
+

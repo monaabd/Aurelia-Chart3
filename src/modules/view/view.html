@@ -1,6 +1,4 @@
 
-
-
 <template>
   <div class="container">
       <div class="panel-group">
@@ -8,7 +6,7 @@
       <!--p class="heading"> Dashbord</p-->
    
 
-     <div class="row bigger">
+     <div class="row wrapper">
 
         <div class="col-lg-6">
             <div class="panel panel-default">
@@ -33,11 +31,12 @@
         </div>   
       </div>     
     </div>
- </div> <!--row -->
+ </div> <!--row wrapper -->
               
-    <div class="row bigger">
+    <div class="row wrapper">
         
-        <div class="col-lg-6 ">
+        <div class="col-lg-6">
+       
           
             <div class="panel panel-default" style="padding:14px;">
                 <div class="panel-heading"> <p > Översikt</p></div>
@@ -57,8 +56,6 @@
                           <p class="details">Fördelat på 2 bankkonton</p>
                           </div>
                     </div>
-                    
-                    
                     <div class="row vdivide">
                       <div class="col-sm-6 text-center " style="padding-top:10px;"> 
                        
@@ -71,27 +68,98 @@
                           <!--div class="part4"--> 
                               <p><a href="" target="_blank"> </a></p>
                               <p><h3></h3></p> 
-                           
                      
                     </div>
                    </div>
-               
             </div>
                   
-         </div> <!--col lg6-->  
-
-
-
-        <div class="col-lg-6 ">
+         </div> <!--col lg6 översikt-->  
+        <div class="col-lg-6 " >
             <div class="panel panel-default">
-                <div class="panel-heading">                  
-                   Att göra                   
-                </div>             
-            </div>
-         </div>
-        
+                <div class="panel-heading"> Att göra </div>                 
+                <div class="panel-body">
+                  
+                    <p class="pull-right text-muted" style="color:rgba(8, 112, 197, 0.63);">
+                        Lägg till händelse
+                        <a href="#"> 
+                          <span class="glyphicon glyphicon-plus-sign pull-left margin-left: -15px;" style="color:rgba(8, 112, 197, 0.63);"><span>. </span> </span>
+                        </a>
+                      </p>
+                      
+                    <table width="100%" class="table table-striped table-bordered table-hover"  id="">
+                        <thead>
+                            <tr>
+                                <th>Application</th>
+                                <th>Meddelande</th>
+                                <th>Belopp</th>
+                                <th>Deadline</th>
+                                <th>Åtgärd</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td> <span class="chat-img pull-left">
+                                    <img src="http://placehold.it/50/55C1E7/fff?text=Års" alt="User Avatar" class="img-circle" />
+                                </span></td>
+                                <td>Bokföra <strong>Årets Resultat</strong></td>
+                                <td>4379000</td>
+                                <td>2018-03-28 1år</td>
+                                <td><button type="button" class="btn btn-sm">Bokför</button></td>
+                            </tr> 
+                            <tr>
+                                <td><span class="chat-img pull-left">
+                                    <img src="http://placehold.it/50/7cc9b1/fff?text=Lön" alt="User Avatar" class="img-circle" />
+                                </span></td>
+                                <td>Betala ut lön(9pers)</td>
+                                <td>361702</td>
+                                <td>2017-02-21 1mån</td>
+                                <td><button type="buttom" class="btn btn-success btn-sm">Betala</td>
+                                
+                              </tr>
+
+                              <tr>
+                                  <td> <span class="chat-img pull-left">
+                                      <img src="http://placehold.it/50/ed754e/fff?text=Egen" alt="User Avatar" class="img-circle" />
+                                  </span>
+                                   
+                                    </td>
+                                  <td>Egen anteckning på något att göra som skulle kunna vara såhär lång.Kanske längre </td>
+                                  <td>-</td>
+                                  <td style="white-space:nowrap; padding:0px;">2017-02-18 
+                                     <div class="text-muted notice">
+                                      <i class="fa fa-clock-o fa-fw "></i> 5dagar kvar
+                                     </div>
+                                    </td>
+                                  <td> <button type="button" class="btn btn-primary btn-sm">Klarmarkera</button></td>
+                              </tr>   
+                                  <td>
+                                    <span class="chat-img pull-left">
+                                      <img src="http://placehold.it/50/246fbf/fff?text=Bokf" alt="User Avatar" class="img-circle" />
+                                  </span>
+                                </td>
+                                  <td>Färdigställ momsrapport </td>
+                                  <td>-</td>
+                                  <td style="white-space:nowrap; padding:0px;">2017-03-02  
+                                  
+                                    <div class="text-muted notice">
+                                      <i class="fa fa-clock-o fa-fw "></i> 3dagar kvar
+                                     </div>
+                                    </td>
+                                  <td> 
+                                    <div  style="white-space:nowrap; padding:0px;">
+                                      <button type="button" class="btn btn-primary btn-sm">Öppna</button>
+                                      <button type="button" class="btn btn-primary btn-sm">Klamarkera</button>
+                                    </div>
+                                  </td>
+                              </tr>   
+                          </tbody>
+                        </table>
+               </div><!--second row panel body -->       
+            
+         </div><!-- second row panel default-->
+        </div><!--col6-->
       </div> <!--second row-->   
-     </div>
+     </div><!--panel default-->
    </div> <!--panel group"-->
   </div> <!-- container"-->
 </template>
